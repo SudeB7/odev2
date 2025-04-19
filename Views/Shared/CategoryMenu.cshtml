@@ -1,0 +1,10 @@
+@model IEnumerable<BookStore.Models.Category>
+
+<ul class="list-group">
+@foreach (var category in Model)
+{
+    <li class="list-group-item">
+        <a href="/Books?categoryId=@category.Id">@category.Name</a>
+    </li>
+}
+</ul>
